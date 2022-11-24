@@ -11,3 +11,15 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+ const newCleaningProduct = produtos.filter((object) => object.categoria === 'Limpeza')
+
+ console.log(newCleaningProduct)
+
+ let totalPrice = 0
+
+ for(product of produtos){
+    totalPrice += product.preco
+ }
+
+ console.log(totalPrice)
+ 
